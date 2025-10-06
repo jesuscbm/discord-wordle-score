@@ -8,14 +8,26 @@ The script outputs the number of wins and ties of both users, allowing you to br
 
 - Python >= 3.8 and Pip
 - discord.py or discord.py-self
-- dotenv, argparse
+- dotenv
+
+## Installation
+
+With python >= 3.8 installed, run in the folder of your choice
+
+```bash
+python -m venv .venv                    # Create virtual environment in a new .venv folder
+source .venv/bin/activate               # Activate the venv for the current shell session
+pip install discord.py python-dotenv    # Install required dependencies
+```
+
+In case of self-botting (not encouraged), replace discord.py with discord.py-self
 
 ## How to use
 
 The script is configured in a .env file.
 
 ```bash
-DISCORD_TOKEN="YourBotToken"
+DISCORD_TOKEN="YourBotToken"    # For self-botting, you can get your user token from the cookies in the browser
 CHANNEL_ID="Channel where Wordle Bot announces results"
 WORDLE_BOT_ID="1211781489931452447" # I am not sure if it changes or not, worth checking
 
