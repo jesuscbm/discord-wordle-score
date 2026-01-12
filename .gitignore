@@ -1,3 +1,6 @@
+# SQLite database
+*.db
+# Log for debugging
 *.log
 
 # Byte-compiled / optimized / DLL files
