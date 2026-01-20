@@ -1,0 +1,10 @@
+services:
+  bot:
+    container_name: wordle
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    command: python main.py
+    restart: unless-stopped
